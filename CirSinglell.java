@@ -14,7 +14,7 @@ class cll{
             last = null;
         }
 
-        public void insertbegin(int k) {
+        public void insertend(int k) {
             Node newnode=new Node(k);
 
             if( last==null) {
@@ -24,6 +24,7 @@ class cll{
             }else {
                 newnode.next = last.next;
                 last.next = newnode;
+                    last=newnode;
             }
         }
         public void display(){
@@ -42,7 +43,7 @@ class cll{
                 if(j==-1){
                     break;
                 }else{
-                    list.insertbegin(j);
+                    list.insertend(j);
                 }
             }
             
