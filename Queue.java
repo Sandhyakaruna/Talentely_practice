@@ -18,7 +18,7 @@ public class Queue {
             return 0;
         }
     }
-    static int isEmpty() {
+    static int isEmpty(){
         if (front == -1 || rear == -1 || front > rear)
         return 0; // empty queue
         return 1; // non empty queue
