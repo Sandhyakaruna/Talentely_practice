@@ -13,7 +13,7 @@ public class BubbleSorting
         int temp;
 
         for(pass =0;pass<=size-2;pass+=1)
-        {
+        {    
             for(itr=0;itr<size-1-pass;itr++)
             {
                 if(arr[itr]>arr[itr+1])
