@@ -104,6 +104,7 @@ class LinkedList {
                     index.data = temp;
                 }
                 index = index.next;
+                
             }
             current = current.next;
         }
