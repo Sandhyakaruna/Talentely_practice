@@ -7,7 +7,7 @@ int isStrongPassword(char *password) {
     int length = strlen(password);
 
     if (length < 10) {
-        return 0; // Weak password due to insufficient length
+        return 0; 
     }
 
     for (int i = 0; i < length; i++) {
