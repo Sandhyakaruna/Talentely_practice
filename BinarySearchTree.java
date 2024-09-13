@@ -11,16 +11,15 @@ class Node {
     }
 }
 
-// BinarySearchTree class containing the tree and methods to manipulate it
 public class BinarySearchTree {
     Node root;
 
-    // Constructor to initialize the tree
+  
     BinarySearchTree() {
         root = null;
     }
 
-    // Method to insert a new key in the tree
+    
     void insert(int key) {
         root = insertRec(root, key);
     }
