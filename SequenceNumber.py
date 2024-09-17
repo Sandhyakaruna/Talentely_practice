@@ -9,7 +9,7 @@ class NumberGenerator:
             yield current
             current += 1
 
-# Usage
+
 gen = NumberGenerator(1, 5)
 for number in gen.generate_numbers():
     print(number)
