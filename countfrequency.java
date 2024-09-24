@@ -4,10 +4,8 @@ class DigitFrequency {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Get the integer from the user
+        
         int num = scanner.nextInt();
-
-        // Convert the integer to a string
         String numStr = String.valueOf(num);
 
         int[] frequency = new int[10];
