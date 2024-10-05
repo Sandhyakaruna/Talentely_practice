@@ -16,7 +16,7 @@ class MaxArray
         {
             if(arr[i]>max) {
                 max = arr[i];
-                index = 1;
+                index = i;
             }
         }
         System.out.println(max);
