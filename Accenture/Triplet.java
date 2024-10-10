@@ -11,26 +11,28 @@ class Triplet
             arr[i]=obj.nextInt();
         }
         int key=obj.nextInt();
-        System.out.println(Findtripletnum(n,arr,key));
+        if(!Findtripletnum(n,arr,key))
+        {
+            System.out.println(-1);
+        }
 
     }
-    public static int Findtripletnum(int n,int[] arr,int key) {
-        int flag = 0;
-        for (int i = 0; i < n ; i++) {
-            for (int j = i+1; j < n; j++) {
-                for (int k = i+1; k < n; k++) {
+    public static boolean Findtripletnum(int n,int[] arr,int key) {
+
+        for (int i = 0; i < n - 2; i++) {
+            for (int j = 1; j < n - 1; j++) {
+                for (int k = 1; k < n; k++) {
 
                     if (arr[i] + arr[j] + arr[k] == key) {
-                        System.out.println(arr[i]+" "+arr[j]+" "+arr[k]);
-                        flag = 1;
 
+                        System.out.println(arr[i] +" "+ arr[j] +" "+ arr[k]);
+                        return true;
                     }
                 }
+
             }
+
         }
-        if (flag == 0) {
-            System.out.println("Triplet Not found");
-        }
-        return flag;
+        return false;
     }
 }
