@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class Probablity {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int mangoes = scanner.nextInt();
+        int persons = scanner.nextInt();
+        int n = mangoes+persons-1;
+        int k = persons-1;
+        int numerator =1;
+        for (int i=0;i<k;i++)
+        {
+            numerator *= (n - i);
+            System.out.println("N"+numerator);
+        }
+        int denominator = 1;
+        for (int i = 1; i <= k; i++)
+         {
+            denominator *= i;
+            System.out.println("D"+denominator);
+        }
+        int result = numerator / denominator;
+        System.out.println("N/D"+result);
+        scanner.close();
+    }
+}
